@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Fab Lab Teens Werkstatt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\Hina Firdaus\werkstatt\stylelaser.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!--Navigation bar starts here-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top" style="background-color: #ffcc00;">
+        <a class="navbar-brand" href="https://fablabwerkstatt.github.io/"><img src="C:\Users\Hina Firdaus\werkstatt\img\logo_lang.PNG" width="100" height="100" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+          <span class="navbar-toggler-icon">.</button>
+          <div id="translate-lang"></div>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'translate-lang');
+            }
+        </script>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\Hina Firdaus\werkstatt\index.html">Home</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          3D Printing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt\printing.html">Study 3D Design and printing</a></li>
+                          <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt\druckchallenge.html">3D printing hallenge</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Projects Gallery</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="C:\Users\Hina Firdaus\werkstatt\laser.html">Laser cutting</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Robotics Programming</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">PC Building</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </div>
+      </nav>
+ <!--Navigation bar ends here-->
+
+   <!-- Start the content of the website from here -->
+
+   <div class="container-fluid mt-3">
+    <h3>Basics of Lasering</h3>
+    <p>In this section you will be learning the basics of 2D design, Pattern formation, and operating laser machines for cutting and engraving.</p><br>
+    <p><b>Only Two people can be there in the laser machine. If two person a lasering rest must be seated and working on their design in the big table area.</b></p>
+   </div>
+   <!--Begin container 1-->
+   <div class="container">
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Definition</h4>
+            <p>Imagine using a magic light beam that's as thin as a hair and super focused, just like a superhero laser, to cut through stuff like a breeze through your hair! But instead of chopping veggies, it's slicing through stuff like paper, wood, or even metal, making amazing patterns and shapes.
+
+                Think of a computer as your bossy but super-smart friend, telling the laser exactly where to go, like drawing with a flashlight in the dark. Once it's done, ta-da! Perfect cuts, perfect shapes, just like magic. It's like having a superpower for making cool stuff, from big ships to tiny jewelry that sparkles.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser1.jpg" alt="laser" width="500" height="250">
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Function of Laser Machine</h4>
+            <ul>
+                <li>Laser Beam: Diameter 0.1 - 0.3 mm; Power 1-3 kW (adjusted depending on the material)</li>
+                <li>Laser Resonator (glass tube filled with CO2, nitrogen, or helium) generates laser beam</li>
+                <li>The laser beam is directed into the cutting head via mirrors</li>
+                <li>Cutting head: Laser beams are focused by a focusing lens</li>
+                <li>The beam passes through a nozzle into which compressed gas is blown (e.g. nitrogen/oxygen)</li>
+                <li>Gas blows away the smoke (also called Air-Assist).</li>
+                <li>Additionally, particles from the cutting gap are blown away.</li>
+                <li>The focal point must be properly adjusted so that the laser can cut.</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser2.jpg" alt="laser" width="400" height="500" >
+                        <figcaption>PC courtsey: https://www.schweisshelden.de/fachwissen/schneiden-trennen/laserschneiden</figcaption>
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Application of Laser in our day to day life</h4>
+            <ul>
+                <li>Industrial Manufacturing</li>
+                <li>Product Design</li>
+                <li>Medicine</li>
+                <li>Prototyping</li>
+                <li>Research and Education</li>
+                <li>Arts and Crafts</li>
+                <li>Beauty and Cosmetics</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laseruse.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Types of laser for cutting</h4>
+           <p>Different types of lasers, like <b>CO2 lasers, fiber lasers, and solid-state lasers (like ND),</b> are used for cutting various materials. </p>
+           <p>For the sake of this workshop we are using CO2 Lasers.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser4.jpg" alt="laser" width="500" height="400" >
+                        
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    
+    <div class="row">
+        <h4>Types of Laser in Fab Lab</h4>
+        <div class="col-xl-6">
+            <h5>Lotus BLU125-DC</h5>
+            <img src="C:\Users\Hina Firdaus\werkstatt\img\laser5.jpg" alt="laser" width="400" height="400">
+            <p>Need to adjust focual manually. Please check the guide below.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <h5>Epilog FusionMaker 40 Watt</h5>
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser6.jpg" alt="laser" width="600" height="400">
+                        <p>Completely operated through epilog job manager software.</p>
+                        
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Laser cutting</h4>
+            <p>Laser cutting is like using a special superpower light to cut through stuff without even touching it! It's perfect for making all sorts of cool shapes and designs on things. The laser beam is like a magic wand, melting, vaporizing, or burning away parts of the material to make the cuts. And the best part? It's all done without even touching the object directly! So, you can create amazing things without worrying about damaging them.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\cut.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+   </div>
+   <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Laser Engraving</h4>
+            <p>Laser engraving is like drawing with a super-precise laser pen that makes permanent marks on stuff! Instead of just cutting, it carves pictures, designs, even barcodes or serial numbers, onto things like wood, plastic, metal, or leather. It's like giving your favorite things a special tattoo that lasts forever!</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\engrave.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+   </div>
+   <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h4>Materials to use in Fab Lab for laser cutting</h4>
+            <p>For laser cutting, not all materials react the same. <b>Plywood, paper, slate and acrylic</b> are generally good to go</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser3.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <h4>DANGERS of WORKING with Laser Machines!</h4>
+            <p>It is very important to follow certain rules while working with laser machines.</p>
+        <div class="col-xl-6">
+            <h3>Fire</h3>
+            <ul>
+                <li>The base material is vaporized, generating significant heat</li>
+                <li>Some materials may catch fire during cutting</li>
+                <li>Dirt and deposits can cause fires</li>
+                <li>Be Cautious and take a help of your teacher in laser room without any shame!</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser7.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h3>Dangerous fumes and exhaust gases</h3>
+            <ul>
+                <li>When cutting certain materials, laser-generated airborne contaminants (LGACs) can be produced (health risk!) </li>
+                <li>Examples: Benzene, toluene, hydrochloric acid, isocyanates </li>
+                <li>Exhaust systems and/or filter systems are required to vent air outside </li>
+                <li>They must be properly installed and meet all manufacturer specifications </li>
+                <li>Particle contamination</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\laser8.jpg" alt="laser" width="500" height="400" >
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h3>Additional Risks</h3>
+            <ul>
+                <li>Eye damage from direct laser radiation or scattered radiation (visible and invisible!).</li>
+                <li>Loss of vision.</li>
+                <li>Irreparable damage.</li>
+                <li>Damage to skin and other tissue types.</li>
+                <li>Sharp edges (cutting injuries).</li>
+                <li>Electrical hazard Crushing danger.</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\danger.jpg" alt="laser" width="300" height="300" class="center">
+                    </div>
+    </div>
+
+    <div class="w-100"></div>
+    <div class="row">
+        <h4>Design for the laser cutter</h4>
+        <div class="w-100"></div>
+        <div class="row">
+                            <img src="C:\Users\Hina Firdaus\werkstatt\img\vector-raster.jpg" alt="laser" class="center">
+                     
+        </div>
+        <div class="col-xl-6">
+            <h5>Vector graphics</h5>
+            <ul>
+                <li>Engrave thin lines</li>
+                    <li>or cut along a line (laser cutting)</li>
+                    <li>e.g. parts for model building or gift cards</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\vector.jpg" alt="laser" width="500" height="300">
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <h5>Raster/Pixel graphics</h5>
+            <ul>
+                <li>Used for large-scale applications</li>
+                    <li>Engrave motifs with a filled area</li>
+                    <li>e.g. photo, logo, filled letters, stamps</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="C:\Users\Hina Firdaus\werkstatt\img\raster.jpg" alt="laser" width="500" height="300">
+                    </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row">
+        <h3>Tools used for designing</h3>
+        <p>Do remember and keep in mind what are you designing. Because for lasering we are using 2D design. You can draw a design on paper and trace it using any CAD or illustrator tools. Convert the design to be engrave or cut in our laser machines.</p>
+        <div class="col-xl-6">
+            <h5>For vector design</h5>
+            <ul>
+                <li>Adobe illustrator</li>
+                    <li>Inkscape</li>
+                    <li>CorelDraw</li>
+                    <li>Autodesk Fusion360</li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <h5>For Raster design</h5>
+            <ul>
+                <li>Adobe Photoshop</li>
+                    <li>GIMP</li>
+                    <li>Corel PaintShop Pro</li>
+                    <li>MS Paint</li>
+            </ul>
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <h3>Inspiration</h3>
+        <div class="col-xl-6">
+            <ul>
+                <li><a href="https://mcuoneclipse.com/2017/09/03/laser-cutter-wooden-chest-box/">Wooden Chest Box</a></li>
+                    <li><a href="https://www.creativefabrica.com/de/product/jewelry-box-owl-pattern-laser-cutting/">Jewelry Box</a></li>
+                    <li><a href="https://cartonus.com/glasses-box/">Glasses box</a></li>
+                    <li><a href="https://www.creativefabrica.com/the-artistry/laser-crafts/inkscape-tutorial-couples-personalized-keychain/">Personlized key chain</a></li>
+                    <li><a href="https://uviclibraries.github.io/laser/1-Keychain.html">Key chain simple tutorial</a></li>
+            </ul>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\key1.jpeg" alt="laser" width="500" height="300">
+                    </div>
+    </div> 
+   
+    
+    <!--Task for making the key chain using Inkscape-->
+    <div class="w-100"></div>
+    <div class="row">
+        <h3>Design in Inkscape</h3>
+        <p>For the the sake of learning today we are going to design a key chain of your name or any other text of your liking using Inkscape.</p><br>
+            <p>Please follow the tutorial as it is made simplified for you to follow.</p>
+        <div class="col-xl-6">
+            <p><b>Step 1:</b> Open the inkscape and you will find the document look like as in figure.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d1.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 2:</b> Change the page orientation. Go to File > Document Properties > Make the format 1920x1080 and Orientation Landscape.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d2.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 3:</b> Add the text of your choice from the side menu bar. Now write the text and size of the text can be changed from toolbar. Select font which you like your key chain to look like. For this tutorial we are using Gill Sans Ultra Bold font size 200.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d5.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 4:</b> Copy the same text below as shown.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d6.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 5:</b> In the second image add the offset. For that go to Path > click offset repeat the same action x10 times or more until you find the shadow of your text.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d7.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 6:</b> You must have the shadow of your image like this -> </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d8.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 7:</b> In the second image after I change the color you can see the infill and stroke. We need only the stroke and infill is not needed </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d9.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 8:</b>To delete the infill click on the image and right click and find fill and stroke in the dialog box. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d10.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 9:</b> In the Fill menu on side bar click on X and infill will be deleted. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d11.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 10:</b> Create the node around borders of the second image by going to the side toolbar. Check the image. </p><br>
+            <p>This step helps you to remove unwanted lines and disconnection between the lines. <b>MAKE SURE THE LINES ARE CONNECTED.</b> If there is a breakage in line the cutting or engraving will not function.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d12.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 11:</b> Place the name in border and adjust the position. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d14.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 12:</b> To improve our process of lasering. It is recommended to change the color of your design. So change the color of the name to any color of your choice doesn't matter until both outside and inside colors are different. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d15.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 13:</b> You can see the stroke around name we don't want that. Repeat step 7 and go to Strokes. Click on X in the strokes and now you only have one filling of color for smooth engraving.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d16.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 14:</b> Time to create a hole to insert keys. The hole can be of your choice I am making them square. Draw a square rectangle as shown in the figure.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d17.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 15:</b> Click on the rectangle and change infill and stroke for the image. Delete the infill and click on stroke you must see a rectangle with outline only. Adjust the placement of the rectangle and it should be okay according to your wish.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d19.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 16:</b> Select every component of image and we are ready for lasering.</p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d20.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+ <!--Quiz-->
+ <div class="w-100"></div>
+ <div class="row">
+     <h3>Quiz</h3>
+     <p>Before you enter the next stage you must and should do this quiz and score minimum 8/10. Maximum 10/10. You can only attempt this test once so make sure you understand everything well. You can use google translate for the test.</p>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4-uYz5tzh4KPoP8dm2UuFcBN2sd6pPPPNN2NTWjj0dfEUjg/viewform?usp=sf_link">Go to the quiz by clicking here</a>
+     <b>Without the quiz score you will not be allowed to laser!</b>
+ </div>
+<!--Lasering with Epilog-->
+<div class="w-100"></div>
+    <div class="row">
+        <h3>Lasering with Epilog Fusion Maker</h3>
+        <p>Please follow all these steps carefully.</p><br>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 1:</b> Go to the File > Click on Print and select the Epilog engraver printer.</p><br>
+            <p><b>Note: In case Epilog is not in your laptop. save the file as PDF </b></p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d41.png" alt="laser" width="500" height="500">
+                    </div>
+    </div>     
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 2:</b> Change the settings of the PDF as shown below. </p><br>
+            <p><b>If you don't save the settings of PDF as such there could be chance you won't be getting same results in action </b></p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d42.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>     
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 3:</b> Open the file and give Print action and keep the settings of the printer as shown in the figure. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d43.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 4:</b> After giving the print action you will find Epilog Job manager will open. Now resize your design and place it on the Plywood in which you want to print. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d23.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 5:</b> Click on the image and in your right hand side menu you will find split by color. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d26.png" alt="laser" width="350" height="500">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 6:</b> That is why we made the design in two different colors now the black color will be for cutting and red for engraving. </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d27.png" alt="laser" width="350" height="500">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 7:</b> Every material has different property for the plywood please make sure the condition matches as your piece can also catch fire. Process type: Vector, Speed: 6%, Power: 100%, Frequency: 10%. You can change this and experiement also.  </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d29.png" alt="laser" width="350" height="500">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 8:</b> For engraving. Process type: Engrave, Resolution: 500, Speed: 40%, Power: 100%. You can change this and experiement also.  </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d30.png" alt="laser" width="350" height="500">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 9:</b> When satisfied click on print.  </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d31.png" alt="laser" width="350" height="500">
+                    </div>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 10:</b> Contact teacher for this step when your print in ready.  </p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\epi_on.png" alt="laser" width="600" height="400">
+                    </div>
+    </div>  
+<!--Lasering with Epilog-->
+<div class="w-100"></div>
+    <div class="row">
+        <h3>Lasering with Lotus Maxx Plot 125-DC</h3>
+        <p>Please follow all these steps carefully.</p><br>
+    </div>  
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 1:</b> Go to the File > Save the file in PNG and convert the png to DXF from internet site convertio</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d33.png" alt="laser" width="500" height="500">
+                    </div>
+    </div>     
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 2:</b> <a href="https://convertio.co/png-dxf/"> Click here</a> to visit the site and add your PNG file.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d34.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>     
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 3:</b> When the file is converted download DXF file and copy it in the pen drive from Laser room.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\d38.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>     
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 4:</b> Import your dxf file in the LotusCut software. Remember only DXF and PNG for engraving can be used in Lotus laser machine.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l2.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 5:</b> Import your dxf file in the LotusCut software. Remember only DXF and PNG for engraving can be used in Lotus laser machine.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l2.png" alt="laser" width="500" height="300"> <br>
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l4.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 6:</b> Adjust the file added on the laser bed simulation. Resize it as per your liking from dragging or toolbar above.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l5.png" alt="laser" width="500" height="300"> <br>
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l6.png" alt="laser" width="500" height="300">
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 7:</b> Now select only the name inside and click on the taskbar on right hand side where Cut is mentioned.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l7.png" alt="laser" width="500" height="300"> 
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 8:</b> Change the property to scan from cut and make the settings as per mentioned here.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l9.png" alt="laser" width="500" height="300"> 
+                    </div>
+    </div>    
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 9:</b> Change the property to scan from cut and make the settings as per mentioned here.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l9.png" alt="laser" width="500" height="300"> 
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 10:</b> First we will now engrave. Press on start.</p><br>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\10.png" alt="laser" width="500" height="300"> 
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <div class="col-xl-6">
+            <p><b>Step 11:</b> Select only the outline and hole this will be cut. Repeat the same steps as engrave and now change the setting for cut.</p><br>
+            <p><b>Remember to move the laser head using joystick to the position from where you want to make a cut on your material.</b></p>
+                    </div>
+                    <div class="col-xl-6">
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l11.png" alt="laser" width="500" height="300"> 
+                    </div>
+    </div>   
+    <div class="w-100"></div>
+    <div class="row">
+        <p>Your final result must look like this.</p>
+                 <img src="C:\Users\Hina Firdaus\werkstatt\img\laser\l13.jpg" alt="laser" width="800" height="400"> 
+                
+    </div> 
+
+
+
+   </div>
+<!--End container 1-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Footer starts here -->
+   <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2024 Copyright: Fab Lab Siegen
+    </div>
+    
+</body>
+</html>
