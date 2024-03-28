@@ -13,3 +13,12 @@ div.content {
     text-align: left;
 }
 
+.navbar {
+    background-color: #ffcc00;
+
+}
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
