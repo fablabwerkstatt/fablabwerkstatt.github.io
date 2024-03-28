@@ -34,3 +34,38 @@ body {
         margin-right: auto;
         width: 50%;
     }
+    .navbar {
+        background-color: #ffcc00;
+        padding: 20px;
+
+    }
+ .page {
+    background-color: green;
+ }
+
+ div.container {
+    text-align: center;
+ }
+
+ ul.lists {
+    display: inline-block;
+    text-align: left;
+ }
+
+ .row-img {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column-img {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
