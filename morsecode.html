@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Fab Lab Teens Werkstatt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="D:\werkstatt\img\favicon.ico">
+    <link rel="stylesheet" href="D:\werkstatt\stylelaser.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+   <!--Navigation bar starts here-->
+   <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="https://fablabwerkstatt.github.io/"><img src="D:\werkstatt\img\logo_lang.PNG" width="100" height="100" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+      <span class="navbar-toggler-icon">.</button>
+      <div id="translate-lang"></div>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'translate-lang');
+        }
+    </script>
+  
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Weekly activity
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="D:\werkstatt\designday01.html">02 May 2024</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\designday02.html">16 May 2024</a></li>
+                    <li><a class="dropdown-item disabled" href="#">23 May 2024</a></li>
+                    <li><a class="dropdown-item disabled" href="#">06 June 2024</a></li>
+                    <li><a class="dropdown-item disabled" href="#">13 June 2024</a></li>
+                </ul>
+              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      3D Printing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item disabled" href="#">Study 3D Design and printing</a></li>
+                      <li><a class="dropdown-item disabled" href="#">3D printing Challenge</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item disabled" href="#">Projects Gallery</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lasering
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="D:\werkstatt\laser.html">Basics of Lasering</a></li>
+                      <li><a class="dropdown-item" href="D:\werkstatt\laserdef.html">Laser defition</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserapplication.html">Laser application</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserfunction.html">Function of Laser Machine</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasertype.html">Types of laser</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserdef.html">Laser defition</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserwhat.html">Laser cuttin and Engraving</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasermaterial.html">Lasering material in Fab Lab</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserdangers.html">Dangers of Laser machines</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasedesign.html">Vector and Raster</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasertools.html">Tools for designing</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape01.html">Inkscape interface</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape02.html">Steps to design Keychain in Inkscape</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape03.html">Saving file for Lotus Maxx Plot 125</a></li>
+                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserepilog.html">Lasering with epilog fusion maker</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Projects Gallery</a></li>
+                    </ul>
+                  </li>
+  
+              </li>
+              <li class="nav-item">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Robotics Programming
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeinto.html">Introduction to Calliope</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopehow.html">How to program Calliope?</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts01.html">Input and Output of Calliope mini</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts02.html">Sensors of Calliope mini</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts03.html">Expansion</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts04.html">System</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\laserinkscape01.html">Quiz Calliope</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\laserinkscape03.html">Program Mini Piano</a></li>
+                    <li><a class="dropdown-item" href="D:\werkstatt\laserepilog.html">Program morse code to decode</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Projects Gallery</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">PC Building</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </div>
+  </nav>
+
+<!--Navbar ends-->
+
+
+
+<!--Start of the center alingment div-->
+<div class="container" align="center">
+    <div class="row">
+        <h3 style="color:#404040;"><b>Second program</b></h3>
+        <h3>Morse Code</h3>
+        </div>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="D:\werkstatt\img\calliope\mcsheet.png" alt="oben roberta lab" width="500" height="auto">
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5 mt-4">
+                  <h5>Morse code</h5>
+                  <p class="lead">A very scientfic way to send coded message. Take another paper and fill sheet with all alphabets with a morse code. </p>
+                  <p>Program your Calliope mini by following the step ahead. This will help you fill the sheet. Also you can make your name morse code.</p>
+                <p>In morse code when you press button A you get a dot (.) and on button B you get a blank (_). In this combination you code your letters.</p>
+                </div>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="D:\werkstatt\img\calliope\orl.png" alt="oben roberta lab" width="500" height="auto">
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5 mt-4">
+                  <h5>Start your Open Roberta Lab</h5>
+                  <p class="lead">When you login your open roberta lab login it will be blank. For the Morse Code you need 1 with square section and 2 with star sections. You need to use Message block from the 2 section. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <video width="500" height="auto" controls>
+              <source src="D:\werkstatt\video\mc2.mkv">
+    
+            </video>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5 mt-4">
+                <h5>Create a Variable</h5>
+                <p class="lead">Variable is like a bowl that can store. Yes it can help you store some values like numbers, texts, boolean number that is 0 and 1 inside a varaibale. LIke in bowl we can always take our candy and eat. Same from variables you can take out variable and use them.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <video width="500" height="auto" controls>
+            <source src="D:\werkstatt\video\mc3.mkv">
+  
+          </video>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5 mt-4">
+              <h5>Set a radio channel</h5>            
+              <p class="lead">Only needed if you want to program the recieving side of the morse that could help you send messages. When you and your friend is programming add set to channel block. That will enable radio function of Calliope mini and in same channel you can send your friends signals.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <video width="500" height="auto" controls>
+          <source src="D:\werkstatt\video\mc4.mkv">
+
+        </video>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-5 mt-4">
+            <h5>Add infinte loop and if block</h5>
+            <p class="lead">Repeat indefinte loop block will help you run your program until you forcefully stop. The if block helps you decide options between A and B button pressing.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <video width="500" height="auto" controls>
+        <source src="D:\werkstatt\video\mc5.mkv">
+
+      </video>
+    </div>
+    <div class="col-lg-6">
+      <div class="p-5 mt-4">
+          <h5>Code for button A to print (.)</h5>
+          <p class="lead">Add button A which We will add show image block to display dot. Then add Message block from 2 star and add a string inside it should have a dot (.). Play a sound block can be added for more cool feature. </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <video width="500" height="auto" controls>
+      <source src="D:\werkstatt\video\mc7.mkv">
+
+    </video>
+  </div>
+  <div class="col-lg-6">
+    <div class="p-5 mt-4">
+        <h5>Code for button B to print (_)</h5>
+               <p class="lead">Add button B which We will add show image block to display blank. Then add Message block from 2 star and add a string inside it should have a blank (_). Play a sound block can be added for more cool feature.</p>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <video width="500" height="auto" controls>
+      <source src="D:\werkstatt\video\mc8.mkv">
+
+    </video>
+  </div>
+  <div class="col-lg-6">
+    <div class="p-5 mt-4">
+        <h5>Add wait and clear block</h5>
+               <p class="lead">After the if..else block add wait block for 200ms and clear display so the memory can be cleaned for your next input.</p>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <video width="500" height="auto" controls>
+      <source src="D:\werkstatt\video\orl_download.mp4">
+
+    </video>
+  </div>
+  <div class="col-lg-6">
+    <div class="p-5 mt-4">
+        <h5>Happy then download and run</h5>
+               <p class="lead">If you are ready with your code lets try running in your Calliope mini. Save the code with name morsesend.HEX. Now take the paper and fill this sheet spell your name</p>
+      </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <h3 style="color:#404040;"><b>Program reciever Calliope to send message in Morse code</b></h3>
+  <h3>Call your friends and start programming in his/her Open Roberta Lab for the recieving end.</h3>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <video width="500" height="auto" controls>
+        <source src="D:\werkstatt\video\mr1.mkv">
+  
+      </video>
+    </div>
+    <div class="col-lg-6">
+      <div class="p-5 mt-4">
+          <h5>Code Reciever end</h5>
+                 <p class="lead">Follow the code in the video and edit your code after the sender part you coded as above.</p>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <video width="500" height="auto" controls>
+        <source src="D:\werkstatt\video\mr2.mkv">
+  
+      </video>
+    </div>
+    <div class="col-lg-6">
+      <div class="p-5 mt-4">
+          <h5>Downloading morse code reciever side</h5>
+                 <p class="lead">Remember to ask your friend program the reciever end and download in another calliope. Set the channel to 10 in both the morse code or else you can't be able to recieve messages.</p>
+        </div>
+    </div>
+  </div>
+
+
+
+      </div> <!--End of container my-5 -->
+                  
+                   
+
+                    <!--Navigation for next and previous-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="next"><a class="page-link" href="D:\werkstatt\calliopeparts04.html">Previous</a></li>
+                          <li class="next"><a class="page-link" href="D:\werkstatt\morsecode.html">Next</a></li>
+                        </ul>
+                      </nav>
+    
+    </div>
+<!--End of the center alingment div-->
+
+       
+   <!-- Footer starts here -->
+   <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2024 Copyright: Fab Lab Siegen
+    </div>
+    
+</body>
+</html>
