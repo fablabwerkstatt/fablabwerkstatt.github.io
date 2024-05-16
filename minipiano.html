@@ -4,8 +4,8 @@
     <title>Fab Lab Teens Werkstatt</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="D:\werkstatt\img\favicon.ico">
-    <link rel="stylesheet" href="D:\werkstatt\stylelaser.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="stylelaser.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -13,11 +13,12 @@
 
 
 
+
 </head>
 <body>
-   <!--Navigation bar starts here-->
-   <nav class="navbar navbar-light navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="https://fablabwerkstatt.github.io/"><img src="D:\werkstatt\img\logo_lang.PNG" width="100" height="100" alt="logo"></a>
+     <!--Navigation bar starts here-->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="https://fablabwerkstatt.github.io/"><img src="img/logo_lang.png" width="100" height="100" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
       <span class="navbar-toggler-icon">.</button>
       <div id="translate-lang"></div>
@@ -27,7 +28,7 @@
             new google.translate.TranslateElement({pageLanguage: 'en'}, 'translate-lang');
         }
     </script>
-  
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -36,25 +37,26 @@
           
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Weekly activity
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="D:\werkstatt\designday01.html">02 May 2024</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\designday02.html">16 May 2024</a></li>
-                    <li><a class="dropdown-item disabled" href="#">23 May 2024</a></li>
-                    <li><a class="dropdown-item disabled" href="#">06 June 2024</a></li>
-                    <li><a class="dropdown-item disabled" href="#">13 June 2024</a></li>
-                </ul>
-              </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Weekly activity
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="designday01.html">02 May 2024</a></li>
+                      <li><a class="dropdown-item" href="designday02.html">16 May 2024</a></li>
+                      <li><a class="dropdown-item disabled" href="#">23 May 2024</a></li>
+                      <li><a class="dropdown-item disabled" href="#">06 June 2024</a></li>
+                      <li><a class="dropdown-item disabled" href="#">13 June 2024</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       3D Printing
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item disabled" href="#">Study 3D Design and printing</a></li>
-                      <li><a class="dropdown-item disabled" href="#">3D printing Challenge</a></li>
+                      <li><a class="dropdown-item" href="druck.html">About 3D</a></li>
+                      <li><a class="dropdown-item" href="tinkerdruck.html">Sign in Tinkercad</a></li>
+                      <li><a class="dropdown-item" href="druckchallenge.html">3D printing Challenge</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item disabled" href="#">Projects Gallery</a></li>
                     </ul>
@@ -64,48 +66,47 @@
                       Lasering
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="D:\werkstatt\laser.html">Basics of Lasering</a></li>
-                      <li><a class="dropdown-item" href="D:\werkstatt\laserdef.html">Laser defition</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserapplication.html">Laser application</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserfunction.html">Function of Laser Machine</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasertype.html">Types of laser</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserdef.html">Laser defition</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserwhat.html">Laser cuttin and Engraving</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasermaterial.html">Lasering material in Fab Lab</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserdangers.html">Dangers of Laser machines</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasedesign.html">Vector and Raster</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\lasertools.html">Tools for designing</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape01.html">Inkscape interface</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape02.html">Steps to design Keychain in Inkscape</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserinkscape03.html">Saving file for Lotus Maxx Plot 125</a></li>
-                      <li><a class="dropdown-item" href="C:\Users\Hina Firdaus\werkstatt - copy\laserepilog.html">Lasering with epilog fusion maker</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Projects Gallery</a></li>
+                                         <li><a class="dropdown-item" href="laser.html">Basics of Lasering</a></li>
+                    <li><a class="dropdown-item" href="laserdef.html">Laser defition</a></li>
+                    <li><a class="dropdown-item" href="laserapplication.html">Laser application</a></li>
+                    <li><a class="dropdown-item" href="laserfunction.html">Function of Laser Machine</a></li>
+                    <li><a class="dropdown-item" href="lasertype.html">Types of laser</a></li>
+                    <li><a class="dropdown-item" href="laserwhat.html">Laser cuttin and Engraving</a></li>
+                    <li><a class="dropdown-item" href="lasermaterial.html">Lasering material in Fab Lab</a></li>
+                    <li><a class="dropdown-item" href="laserdangers.html">Dangers of Laser machines</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="lasedesign.html">Vector and Raster</a></li>
+                    <li><a class="dropdown-item" href="lasertools.html">Tools for designing</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="laserinkscape01.html">Inkscape interface</a></li>
+                    <li><a class="dropdown-item" href="laserinkscape02.html">Steps to design Keychain in Inkscape</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="laserinkscape03.html">Saving file for Lotus Maxx Plot 125</a></li>
+                    <li><a class="dropdown-item" href="laserepilog.html">Lasering with epilog fusion maker</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Projects Gallery</a></li>                    
                     </ul>
                   </li>
-  
+
               </li>
               <li class="nav-item">
-                <li class="nav-item dropdown">
+                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Robotics Programming
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeinto.html">Introduction to Calliope</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopehow.html">How to program Calliope?</a></li>
+                    <li><a class="dropdown-item" href="calliopeintro.html">Introduction to Calliope</a></li>
+                    <li><a class="dropdown-item" href="calliopehow.html">How to program Calliope?</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts01.html">Input and Output of Calliope mini</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts02.html">Sensors of Calliope mini</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts03.html">Expansion</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\calliopeparts04.html">System</a></li>
+                    <li><a class="dropdown-item" href="calliopeparts01.html">Input and Output of Calliope mini</a></li>
+                    <li><a class="dropdown-item" href="calliopeparts02.html">Sensors of Calliope mini</a></li>
+                    <li><a class="dropdown-item" href="calliopeparts03.html">Expansion</a></li>
+                    <li><a class="dropdown-item" href="calliopeparts04.html">System</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\laserinkscape01.html">Quiz Calliope</a></li>
+                    <li><a class="dropdown-item" href="calliopequiz.html">Quiz Calliope</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\laserinkscape03.html">Program Mini Piano</a></li>
-                    <li><a class="dropdown-item" href="D:\werkstatt\laserepilog.html">Program morse code to decode</a></li>
+                    <li><a class="dropdown-item" href="minipiano.html">Program Mini Piano</a></li>
+                    <li><a class="dropdown-item" href="morsecode.html">Program morse code to decode</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Projects Gallery</a></li>
                   </ul>
@@ -120,7 +121,6 @@
         </div>
     </div>
   </nav>
-
 <!--Navbar ends-->
 
 
@@ -135,7 +135,7 @@
         <div class="container my-5">
           <div class="row">
             <div class="col-lg-6">
-              <img src="D:\werkstatt\img\calliope\orl.png" alt="oben roberta lab" width="500" height="auto">
+              <img src="img/calliope/orl.png" alt="oben roberta lab" width="500" height="auto">
             </div>
             <div class="col-lg-6">
               <div class="p-5 mt-4">
@@ -147,7 +147,7 @@
         <div class="row">
           <div class="col-lg-6">
             <video width="500" height="auto" controls>
-              <source src="D:\werkstatt\video\mp2.mkv">
+              <source src="video/mp2.mkv">
     
             </video>
           </div>
@@ -161,7 +161,7 @@
       <div class="row">
         <div class="col-lg-6">
           <video width="500" height="auto" controls>
-            <source src="D:\werkstatt\video\mp3.mkv">
+            <source src="video/mp3.mkv">
   
           </video>
         </div>
@@ -176,7 +176,7 @@
     <div class="row">
       <div class="col-lg-6">
         <video width="500" height="auto" controls>
-          <source src="D:\werkstatt\video\mp4.mkv">
+          <source src="video/mp4.mkv">
 
         </video>
       </div>
@@ -190,7 +190,7 @@
   <div class="row">
     <div class="col-lg-6">
       <video width="500" height="auto" controls>
-        <source src="D:\werkstatt\video\mp5.mkv">
+        <source src="video/mp5.mkv">
 
       </video>
     </div>
@@ -204,7 +204,7 @@
 <div class="row">
   <div class="col-lg-6">
     <video width="500" height="auto" controls>
-      <source src="D:\werkstatt\video\mp6.mkv">
+      <source src="video/mp6.mkv">
 
     </video>
   </div>
@@ -218,7 +218,7 @@
 <div class="row">
   <div class="col-lg-6">
     <video width="500" height="auto" controls>
-      <source src="D:\werkstatt\video\orl_download.mp4">
+      <source src="video/orl_download.mp4">
 
     </video>
   </div>
@@ -241,8 +241,8 @@
                     <!--Navigation for next and previous-->
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-center">
-                          <li class="next"><a class="page-link" href="D:\werkstatt\calliopeparts04.html">Previous</a></li>
-                          <li class="next"><a class="page-link" href="D:\werkstatt\morsecode.html">Next</a></li>
+                          <li class="next"><a class="page-link" href="calliopeparts04.html">Previous</a></li>
+                          <li class="next"><a class="page-link" href="morsecode.html">Next</a></li>
                         </ul>
                       </nav>
     
