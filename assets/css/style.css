@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 1px 15px 0 lightblue;
+}
+
+.dropdown-menu {
+    min-width:inherit;
+  }
+
+.logo {
+    border-radius: 6px;
+}
+
+.hero-img {
+    object-fit:cover;
+}
+
+.mood-content{
+    padding: 20px;
+    align-content: center;
+}
+
+.mood-head {
+    text-align: center;
+}
+
+.culture {
+    padding: 20px;
+    align-content: center;
+}
+
+footer {
+    background-color: white !important;
+    box-shadow: 0 1px 15px 0 lightblue;
+}
+
+.mood {
+    display: inline-block;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px lightblue;
+    align-content: center !important;
+    margin: 10px 200px !important;
+}
+.mood:hover {
+    background-color: blue !important;
+}
+
+.mood:active {
+  background-color: blue !important;
+  box-shadow: 0 5px lightblue !important;
+  transform: translateY(3px) !important;
+}
+
+.feedback {
+    padding: 20px;
+}
+
+.feedbak-content {
+    margin-top: 40px;
+    align-content: center;
+
+}
+.feedback-head {
+    text-align: center;
+}
+
+.feedback-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px lightblue;
+    align-content: center !important;
+    margin: 10px 200px !important;
+}
+.feedback-btn:hover {
+    background-color: blue !important;
+}
+.feedback-btn:active {
+    background-color: blue !important;
+    box-shadow: 0 5px lightblue !important;
+    transform: translateY(3px) !important;
+  }
+.card {
+    width: 22rem !important;
+    margin: 5px 5px !important;
+}
+.card-title {
+    text-align: center;
+}
+.card-text {
+    text-align: center;
+}
+.card-btn {
+    margin: 5px 95px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px lightblue;
+    align-content: center !important;
+}
+.card-btn:hover {
+    background-color: blue !important;
+}
+.card-btn:active {
+    background-color: blue !important;
+    box-shadow: 0 5px lightblue !important;
+    transform: translateY(3px) !important;
+  }
+
+.module {
+    padding: 20px;
+}
+.module1-content {
+    padding: 20px;
+}
+
+.sidebar-btn {
+    
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px lightblue;
+    align-content: center !important;
+    margin-top: 20px;
+}
+
+.sidebar-btn:hover {
+    background-color: blue !important;
+}
+.sidebar-btn:active {
+    background-color: blue !important;
+    box-shadow: 0 5px lightblue !important;
+    transform: translateY(3px) !important;
+  }
+div.sticky {
+    position: fixed;
+    top: 100px;
+    left: 5px;    
+}
+.module-header {
+    text-align: center;
+    padding: 20px;
+}
+.ct-section {
+    padding: 10px;
+}
+.challenge-header {
+    text-align: center;
+    padding: 10px;  
+}
+.challenge {
+    padding: 20px;
+  
+}
+.challenge-img {
+    height: auto;
+    align-content: center;
+}
+.challenge-subheader {
+    text-align: left;
+    padding: 10px;
+}
+.content {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 450px) and (orientation: portrait) {
+      .module-pdf {
+        width: 450px;
+        height: 400px;
+      }
+      div.sticky {
+        display: none;
+        position: fixed;
+        top: 150px;
+        left: 5px;    
+    }
+
+    }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .module-pdf {
+        width: 450px;
+        height: 500px;
+      }
+    
+ }
