@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zukunft Akademie</title>
+    <link rel="icon" type="image/x-icon" href="assets\icons\za_favicon.png">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets\css\style.css">
+        <script src="https://kit.fontawesome.com/4913b76cb6.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css" media="all">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+
+
+   <!--sticky Navbar -->
+   <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets\image\za-nav.png" alt="Zukunft Akademie Logo" height="75" width="75" class="logo d-inline-block align-text-center">
+    Zukunft Akademie  
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#mood-survey">Mood Survey</a></li>
+                <li><a class="dropdown-item" href="index.html#culture">Class Culture</a></li>
+                <li><a class="dropdown-item" href="index.html#modules">Modules</a></li>
+                <li><a class="dropdown-item" href="index.html#feedback">Feedback Survey</a></li>
+
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modules
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="module1.html">3D Printing and 3D Modeling</a></li>
+                <li><a class="dropdown-item" href="module2.html">Programming with Calliope Mini</a></li>
+                <li><a class="dropdown-item" href="module3.html">Zuckermessung mit dem Photometer</a></li>
+                <li><a class="dropdown-item" href="module4.html">Storytelling with AI</a></li>
+                <li><a class="dropdown-item" href="module5.html">Interactive Storytelling</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+          </ul>
+         </div>
+      </div>
+      <div id="google_translate_element"></div>
+
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                  {pageLanguage: 'en'},
+                  'google_translate_element'
+              );
+          }
+      </script>
+  
+      <script type="text/javascript" 
+              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+      </script>
+  
+    </div>  <!--End of container fluid-->
+  </nav> <!--End of Navbar-->
+
+
+
+ <!--Toggle Sidebar-->  
+
+ <div class="sticky">
+  <button class="btn btn-outline-primary sidebar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Content</button>
+</div>
+   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasLeftLabel">Content</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="content">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Day 1
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#ct1">Challenge for the day</a></li>
+            <li><a class="dropdown-item" href="#what-ct">What is Computational thinking?</a></li>
+            <li><a class="dropdown-item" href="#why-ct">Why we need Computational thinking?</a></li>
+            <li><a class="dropdown-item" href="#component-ct">Component of Computational Thinking</a></li>
+            <li><a class="dropdown-item" href="#example-ct">Example of Computational thinking</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+
+ 
+       
+    <!--Module-->
+    <section class="ct1" id="ct1">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 justify-content-center challenge">
+            <h5 class="challenge-subheader">Rules for the challenge</h5>
+            <ul>
+              <li>Work in pair total team we have 5.</li>
+              <li>Solve the track no hints will be given and you can’t get help from facilitator.</li>
+              <li>This will help you learn Computational Thinking</li>
+              <li>25mins will be given to solve the puzzle.</li>
+              <li>The track should be exactly same and ball must travel to the end.</li>
+              <li>While solving make sure you have to fill algorithm sheet given to you.</li>
+              <li>You must fill the sheet so you can follow the steps and build the track.</li>
+              <li>After the times up each team must exchange the algorithm sheet with each other.</li>
+              <li>The facilitator will take away the track you build and you have to follow the algorithm sheet that you made to build the track again</li>
+              <li>The team will now have to solve the puzzle using the other team sheet in 15mins.</li>
+              <li>You can't take help from mobile, laptop, facilitator or internet</li>
+              <li>
+                Challenge scores are following:
+                <ul>
+                  <li>The team who could build the algorithm correct and solve puzzle will get <b>+20</b></li>
+                  <li>If a team is only able to solve puzzle and couldn’t get the algorithm right than <b>+10</b></li>
+                  <li>If a team can get nothing right than they get <b>0</b></li>
+                  <li>If you mess up with rules than, in that case breaking class culture and games rule <b>-10</b></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="w-100"></div>
+          <div class="col justify-content-center challenge">
+            <h3 class="challenge-header">Challenge for Today</h3>
+            <img src="assets\image\track to make.png" alt="Gravitrax trak" class="rounded img-fluid mx-auto d-block challenge-img">
+          </div>
+        </div>
+        <div class="row justify-content-center module">
+            <div class="col justify-content-center ct-section">
+                <h1 class="module-header" id="what-ct">Computational Thinking</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-4 justify-content-center ct-section">
+              <h5>What is Computational thinking?</h5>
+          </div>
+          <div class="col-lg-6 justify-content-center ct-section">
+        <p>Computational Thinking is a way of solving problems in your everyday life—like being a problem-solving superhero! Think about tying your shoelaces. Did you do that today? Then you used computational thinking!
+
+          What about making a sandwich when you’re hungry, or planning what to pack for a trip? Those are all examples, too! Computational Thinking is really just a way of breaking down problems to solve them step-by-step. <br>
+          
+          When you do computational thinking, you’re doing two big things:
+<ul>
+  <li>analyzing a problem when it occurs, and</li>
+  <li>identifying the most appropriate solution. </li>
+</ul>
+Can you think of other things you do every day that use this kind of thinking? That’s the power of computational thinking!
+          
+        </p>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe src="https://www.youtube.com/embed/TXFBH1PJJ18?si=afHygRRnNsAmqoMg&amp;start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+
+        <div class="w-100"></div>
+        <div class="col-lg-4 justify-content-center ct-section" id="why-ct">
+          <h5>Why we need Computational thinking</h5>
+      </div>
+      <div class="col-lg-6 justify-content-center">
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe src="https://www.youtube.com/embed/c7eImuiNYQI?si=u6i5Zh6QMfdSxdBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="w-100"></div>
+        <div class="col-lg-4 justify-content-center ct-section" id="component-ct">
+          <h5>What are the four components of computational thinking?</h5>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion accordion-flush" id="ct-type">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Decomposition
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#ct-type">
+                <div class="accordion-body">
+                  Decomposition is the process of breaking down one huge problem into several smaller situations. 
+                  For example, think about making an omelette for your breakfast. Before you can get to the finished product, 
+                  you have to get out a frying pan and put it on the hob, 
+                  crack your eggs into a cup, whisk them, pour them into the pan, fry them, add seasoning, etc.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Pattern Recognition
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#ct-type">
+                <div class="accordion-body">Pattern recognition is a way of looking for similarities between different problems. 
+                  Recognizing repeat issues and common occurrences can also help us better determine the best, most immediate solution for certain situations having already encountered them before. That is to say, one can solve problems more quickly without compromising the solution because they’ve already solved one just like it.
+                  It’s like memorizing the multiplication table or learning the spelling of a really tricky word. 
+                  At first, you’ll struggle to remember that 7 x 6 is 42, or that “acquaintance” only has one “c.” 
+                  But as you continuously encounter these problems, the more you’ll remember the correct answer—and, thus, successfully solve them!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Abstraction or Pattern Generalization
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#ct-type">
+                <div class="accordion-body">
+                  Abstraction, also known as pattern generalization, is the process of seeking out and identifying only the relevant information crucial to solving the problem. This, by extension, translates into the ability to ignore unimportant or irrelevant details of the issue at hand. 
+                  Perhaps you’ve heard the phrase, “look at the big picture,” or “to see the bigger picture.”
+                  Think about an escape room or a detective story. There are often lots of details that seem interesting, but which actually aren’t very useful. 
+                  Learning to identify what is important and what can be ignored helps you to solve problems faster and more efficiently.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Algorithm design
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#ct-type">
+                <div class="accordion-body">
+                  The last element of computational thinking is Algorithms—also called algorithmic design. 
+                  This is, arguably, the crux of computational thinking. It’s the process of developing steps and rules 
+                  that need to be followed in order to achieve the desired outcome aka solve the problem. 
+                  This ensures that other people can replicate the same solution should they ever encounter the 
+                  same – or similar – problem.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--Accordion ends here-->
+<div class="w-100"></div>
+            <div class="col-lg-4 justify-content-center ct-section" id="example-ct">
+              <h5>Examples of Computational Thinking in Real Life</h5>
+          </div>
+          <div class="col-lg-6 justify-content-center ct-section">
+        <ul>
+          <li>Using an algorithm to find the best route between two places based on traffic and other factors like construction or road blocks</li>
+          <li> deciding whether to plan an activity based on weather predictions on an app</li>
+          <li>Following a recipe to bake a cake an an example of an algorithm.</li>
+          <li>Planning a budget involves pattern recognition and decomposition when you determine your spending habits in each category</li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+        </div>  <!--end of row-->
+           
+
+    </div>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <!--Social media links in Footer-->
+    <section>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-5 d-flex align-items-center">
+                <div class="lc-block text-center mb-3 mb-md-0">
+                    <a class="navbar-brand" href="https://fablab-siegen.de/" target="_blank">
+                        <img class="img-fluid me-1" src="assets\icons\logos.png" alt="my brand" height="50%" width="50%">
+                    </a>
+               </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                <div class="lc-block text-center mb-3 mb-md-0">
+                    <span editable="inline" class="text-muted">© 2024 Fab Lab Siegen, Germany</span>
+
+                </div>
+            </div>
+            <div class="col-md-4 justify-content-end d-flex gap-3">
+                    <!-- Facebook -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      href="https://www.facebook.com/fablabsiegen" target="_blank" role="button"
+                      ><i class="fab fa-facebook-f"></i></a>
+              
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      href="https://x.com/fablabsiegen?mx=2"
+                      role="button" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      href="https://www.instagram.com/fablabsiegen/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                      role="button" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+                    <!-- Linkedin -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      href="https://www.linkedin.com/company/fablabsiegen/"
+                      role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    
+            </div>
+        </div>
+    </section>
+   
+      
+  <!--Js file-->
+  <script src="assets\js\app.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/4913b76cb6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
