@@ -79,24 +79,381 @@
         </div>  <!--End of container fluid-->
       </nav> <!--End of Navbar-->
 
+<!--Toggle Sidebar-->  
+ <div class="wrapper">  <!--Wrapper begins-->
+  <div class="sidebar">
+    <a class="active" href="#m3s1-p1">Introduction to microcontrollers</a>
+    <a href="#m3s1-p2">Getting started with Arduino</a>
+    <a href="#m3s1-p3">Let’s start experimenting!</a>
+    <a href="#m3s1-p4">Experiment Setup</a>
+  </div>
+</div>   <!--Wrapper ends here-->
    
 <!--Module 3 content-->
-<div class="container-lg">
-  <div class="row justify-content-center module">
-      <div class="col justify-content-center">
-          <h1 align="center">Zuckermessung mit dem Photometer</h1>
+<section class="m3s1" id="m3s1">
+  <div class="container-lg">
+    <div class="row justify-content-center module">
+        <div class="col-lg-9 justify-content-center ct-section">
+            <h1 class="module-header" id="m3s1-p1">Building a Photometer</h1>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-lg-3 justify-content-center m3s1-section">
+          <h5>What is a microcontroller?</h5>
       </div>
+      <div class="col-lg-6 justify-content-center">
+    <p>Have you ever wondered how a robot knows how to move or how a traffic light knows when to change colors? 
+      That’s thanks to something called a <b>microcontroller!</b> 
+      A microcontroller is like a tiny <b>computer brain</b> inside many of the gadgets we use every day. 
+      It’s small enough to fit on your fingertip but smart enough to tell machines what to do. 
+    </p>
+      </div>
+    <div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>How does it work?</h5>
   </div>
-      <div class="w-100"></div>
-      <div class="row justify-content-center">
-          <div class="col-lg-5 module1-content">
-              <h4 class="module1-header">Instructions to build the Photometer</h4>
-          </div>
-          <div class="col-lg-6 col-sm-1 module1-content">
-              <embed src="assets/contents/M3S1 handout.pdf" width="800px" height="800px" class="module-pdf"/>
-          </div>
-      </div>  <!--End of row-->
-</div>  <!--End of container-->
+  <div class="col-lg-6 justify-content-center">
+    <p>A microcontroller has three important parts:</p>
+    <ul>
+      <li><b>Brain (Processor):</b> It thinks and makes decisions based on instructions.</li>
+      <li><b>Memory:</b> It remembers the instructions and some information for later.</li>
+      <li><b>Connectors (Inputs and Outputs):</b> They let the microcontroller talk to sensors, lights, buttons, or motors.</li>
+    </ul>
+</div>
+<div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>What can microcontrollers do?</h5>
+  </div>
+  <div class="col-lg-6 justify-content-center">
+    <p>They can make:</p>
+    <ul>
+      <li>A robot follows a line on the floor.</li>
+      <li>A lamp turns on when it gets dark.</li>
+      <li>A toy car drive itself.  </li>
+      <li>A door lock when you press a button. </li>
+    </ul>
+</div>
+<div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>Why are microcontrollers cool?</h5>
+  </div>
+  <div class="col-lg-6 justify-content-center">
+    <p>Microcontrollers are everywhere—inside toys, cars, and even your microwave! 
+      They help us build amazing things and solve problems. With a little bit of coding, 
+      you can teach a microcontroller to do all sorts of fun stuff. 
+      It‘s like being a magician for machines! 
+      <br>
+      <i>What about you? Can you think of any microcontrollers you may have already worked 
+        with or heard about?</i>     
+    </p>
+</div>
+<div class="w-100"></div>
+<div class="col-lg-9 justify-content-center ct-section">
+  <h1 class="module-header" id="m3s1-p2">Getting started with Arduino</h1>
+</div>
+<div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>What is Arduino? </h5>
+  </div>
+  <div class="col-lg-6 justify-content-center">
+    <p>
+      Arduino is an open-source electronics platform that makes it easy to create projects 
+      using both hardware and software. With an Arduino board, you can read inputs like light, 
+      button presses, or even messages and turn them into outputs like controlling a motor, 
+      lighting up an LED, or sharing data online. By using the Arduino programming language and 
+      software, you can program the board to follow your instructions. 
+      Arduino was designed to help students without any experience in electronics or coding, 
+      and it has grown into a global community where people share knowledge and create amazing 
+      projects, from simple gadgets to advanced tools for IoT, wearables, and more.     
+    </p>
+</div>
+<div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>Anatomy of an Arduino Board</h5>
+  </div>
+  <div class="col-lg-6 justify-content-center">
+    <p>
+      While all Arduino boards differ from each other, there are several key components 
+      that can be found on practically any Arduino. 
+      <br>
+      Let's take a look at the image below:     
+    </p>
+    <img src="assets/image/board-anatomy.png" alt="Ardiuno">
+    <ol>
+      <li><b>Microcontroller</b>- this is the brain of an Arduino, and is the component that we load programs 
+        into. Think of it as a tiny computer, designed to execute only a specific number of things.</li>
+        <li><b>USB port</b>- used to connect your Arduino board to a computer. </li>
+        <li><b>USB to Serial chip</b>- the USB to Serial is an important component, as it helps translating 
+          data that comes from e.g. a computer to the on-board microcontroller. This is what makes it 
+          possible to program the Arduino board from your computer. </li>
+        <li><b>Digital pins</b>- pins that use digital logic (0,1 or LOW/HIGH). Commonly used for switches 
+          and to turn on/off an LED. </li>
+        <li><b>Analog pins</b>- pins that can read analog values in a 10 bit resolution (0-1023).</li>
+        <li><b>5V / 3.3V pins</b>- these pins are used to power external components. </li>
+        <li><b>GND</b>- also known as ground, negative or simply -, is used to complete a circuit, where the 
+          electrical level is at 0 volt. </li>
+        <li><b>VIN</b>- stands for Voltage In, where you can connect external power supplies.</li>
+    </ol>
+    <p>Depending on the Arduino board, you will find many more components. The items listed above are generally found on any Arduino board.</p>
+</div>
+<div class="w-100"></div>
+    <div class="col-lg-3 justify-content-center">
+      <h5>How to set up an Arduino board</h5>
+  </div>
+  <div class="col-lg-6 justify-content-center">
+    <p>
+      Before you start controlling the world around you, you'll need to set up the software to program your board. 
+      <br>Let’s watch this short video to have a better idea on how to do it: 
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-hUrgce4n4A?si=_rU9DMSVcopNT0he" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>On this video we heard about some new things. Let’s understand better what they are: </p>
+    <ul>
+<li><b>Firmware:</b> a small program inside a device that tells it how to work properly. </li>
+<li><b>Arduino IDE:</b>  the Arduino Integrated Development Environment (IDE) is a software that allows you to write code and upload it to your Arduino hardware. </li>
+<li><b>Sketch:</b> a file that you write your program inside. It has the .ino extension, and is always stored in a folder of the same name.</li>
+  </ul>
+  <p>Besides the convenient code editing functions, the Arduino Software (IDE) is equipped with a list 
+    of libraries that provide extra functionality for use in sketches, making it easier for you to 
+    connect sensors, displays, modules, etc. 
+
+    <br>
+    You can write programs and upload them to your board with the browser IDE (Arduino Cloud Editor), 
+    or the desktop one (Arduino Software IDE). For practical reasons, in this workshop we’re going to 
+    use the latest version of the desktop IDE (2.3.3). </p>
+  </div>
+  <div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Using the Arduino Software IDE </h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>
+    The Arduino Software (IDE) makes it easy to write code and upload it to the board offline. 
+    We recommend it for users with poor or no internet connection. This software can be used with any 
+    Arduino board. 
+<br>
+There are currently two versions of the Arduino IDE, one is the IDE 1.x.x and the other is IDE 2.x. 
+The IDE 2.x is new major release that is faster and even more powerful to the IDE 1.x.x. In addition 
+to a more modern editor and a more responsive interface it includes advanced features to help users 
+with their coding and debugging. 
+<br>
+The following steps can guide you with using the offline IDE: 
+  </p>
+  <ol>
+    <li>Download and install the Arduino Software IDE (to save time, we have already done this step for you ;D) </li>
+    <li>Connect your Arduino board to your device using the USB cable.</li>
+    <li>Open the Arduino Software (IDE): look for this symbol <img src="assets/image/ardiuno.png" alt="symbol">  on the taskbar.</li>
+  </ol>
+  <p>
+    <b>The Arduino Integrated Development Environment </b>- or Arduino Software (IDE) - connects to the 
+    Arduino boards to upload programs and communicate with them. Programs written using Arduino 
+    Software (IDE) are called <b>sketches</b>. These sketches are written in the text editor and are saved 
+    with the file extension .ino. 
+  </p>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Using the offline IDE 2.3.3</h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>The editor contains the four main areas: </p>
+  <ol>
+    <li>A <b>toolbar with buttons</b> for common functions and a series of menus. The toolbar buttons allow 
+      you to verify and upload programs, create, open, and save sketches, choose your board and port 
+      and open the serial monitor. </li>
+    <li>The <b>Sidebar</b> for regularly used tools. It gives you quick access to board managers, 
+      libraries, debugging your board as well as a search and replacement tool. </li>
+    <li>The <b>text editor</b> for writing your code.</li>
+    <li><b>Console controls</b> gives control over the output on the console.</li>
+    <li>The <b>text console</b> displays text output by the Arduino Software (IDE), including complete 
+      error messages and other information. </li>
+  </ol>
+  <p>The bottom right-hand corner of the window displays the configured board and serial port.</p>
+  <figure>
+    <img src="assets/image/ardiuno-ide.png" alt="Ardiuno">
+    <figcaption align="center">The Arduino Software IDE</figcaption>
+  </figure>
+  <p>Now that you are all set up, let’s try to make your board blink! </p>
+  <ol>
+    <li><b></b>Connect your Arduino board to your computer. </li>
+    <li>Now, you need to select the right board & port. This is done from the toolbar:  
+      <ul>
+        <li><b>For the board:</b> Tools > Board > Arduino AVR Boards > Arduino Uno</li>
+        <li><b>For the port:</b> Tools > Port > COM5 </li>
+      </ul>
+    </li>
+    <li><i>Let’s try an example:</i> navigate to File > Examples > 01.Basics > Blink. </li>
+    <li>To upload it to your board, simply click on the arrow in the top left corner. This process takes a 
+      few seconds, and it is important to not disconnect the board during this process. If the upload is 
+      successful, the message "Done uploading" will appear in the bottom output area. </li>
+    <li>Once the upload is complete, you should see on your board the yellow LED with the letter L next 
+      to it, start blinking. You can adjust the speed of blinking by changing the delay number in the 
+      parenthesis to 100 (for high and low voltages), and upload the Blink sketch again. Now the LED 
+      should blink much faster. </li>
+  </ol>
+  <img src="assets/image/ardiuno-blink.png" alt="Ardiuno">
+  <p><b>Congratulations!</b> You have successfully programmed your board to blink its on-board LED! 
+    <br>
+    <b>*Small hint:</b> if you want the on-board LED to stop blinking, you can just fade it back by using 
+    the sketch “fade”, also from the basic examples menu. 
+  </p>
+</div>
+<div class="w-100"></div>
+<div class="col-lg-9 justify-content-center ct-section">
+  <h1 class="module-header" id="m3s1-p3">Let’s start experimenting!</h1>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>What is a sensor?</h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>
+    A sensor, in simple terms, is used to sense its environment, meaning it records a physical parameter,
+     for example temperature, and converts it into an electronic signal. 
+    There are many types of sensors, and several ways of recording data from them. Perhaps the easiest 
+    to use is an analog sensor, where we communicate a range of values through altering the voltage 
+    input fed into an Arduino analog pin (usually between 0-5 volts). This simply gives you a range 
+    between 0-1023 (a 10-bit resolution). 
+  </p>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>What is a light sensor?</h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>
+    A light sensor measures the brightness of light and converts this information into an 
+    electronic signal. In this workshop, we will use a special type of light sensor called 
+    spectral sensor (the AS7262 from SparkFun) to build a simple photometer. 
+
+The spectral sensor doesn’t just measure how bright the light is – it can also detect different 
+colors of light, just like our eyes, but it measures them more precisely. It detects specific colors 
+in the visible spectrum at 450 nm (violet), 500 nm (blue), 550 nm (green), 570 nm (yellow), 
+600 nm (orange), and 650 nm (red). By connecting this sensor to an Arduino Uno, we can record and 
+analyze this light data for experiments. This is a powerful tool to explore how light interacts with 
+different materials! 
+<br>
+Now that you understood what a light sensor is, let’s try something out with our Arduino board! 
+  </p>
+</div>
+<div class="w-100"></div>
+<div class="col-lg-9 justify-content-center ct-section">
+  <h3 class="module-header" id="m3s1-p4">Experiment: Detecting Calliope Mini Onboard LED Colors with the AS7262 Sensor </h3>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>What You’ll Need</h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <ul>
+    <li>Arduino Uno board </li>
+    <li>USB cable</li>
+    <li>AS7262 Spectral Sensor</li>
+    <li>Connecting wires </li>
+    <li>Calliope Mini kit </li>
+  </ul>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Step 1: Set Up the Circuit </h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>Connect the AS7262 sensor to the Arduino board using the following pins:</p>
+  <ul>
+    <li>3V3 on the sensor to 3.3V on the Arduino; </li>
+    <li>GND on the sensor to GND on the Arduino; </li>
+    <li>SCL on the sensor to SCL on the Arduino;</li>
+    <li>SDA on the sensor to SDA on the Arduino. </li>
+  </ul>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Step 2: Program the Calliope Mini</h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>
+    Use MakeCode for Calliope Mini to program the onboard RGB LED to light up in different colors. 
+<br>
+Program Flow: 
+  </p>
+  <ul>
+    <li>The Calliope Mini will light up its onboard RGB LED in one color at a time (e.g., red, green, blue). </li>
+    <li>Each color will stay on for a few seconds, giving the AS7262 sensor time to measure the light. </li>
+  </ul>
+  <p>Here’s an example on how to do this in MakeCode: </p>
+  <ul>
+    <li>Open MakeCode for Calliope Mini in your web browser. </li>
+    <li>Create a new project. </li>
+    <li>Set Up the LED Colors: use the "set LED to" block (found in the Basic > RGB LED section of 
+      MakeCode) to control the onboard RGB LED. </li>
+    <li>The block program should look like this put them under forever loop (you can choose the colors as you wish, up to 6 colors): </li>
+  
+  <img src="assets\image\ardiuno-code.png" alt="Ardiuno">
+  <li> Upload the program to the Calliope Mini as usuall. </li>
+</ul>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Step 3: Load the code to program the Arduino </h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <p>
+    Sensors normally have their own library, which provide extra functionality for use in sketches. 
+    A number of libraries come installed with the IDE, but you can also download or create your own. 
+    <br>
+    So here are the steps to install the SparkFun AS726X library: 
+    <ul>
+      <li>Open the Arduino IDE on your computer.</li>
+      <li>Go to <b>Sketch > Include Library > Manage Libraries</b> and search for "AS726X." Install the library by SparkFun. </li>
+      <li>Load the example code: 
+        <ul>
+          <li>Go to <b>File > Examples > SparkFun_AS726X > Example1_Readings</b>. </li>
+          <li>This code will read the light intensity values for different colors (spectral bands). </li>
+        </ul>
+      </li>
+      <li>Upload the code to your Arduino.</li>
+    </ul>
+  </p>
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Step 4: Run the Experiment </h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <ol>
+    <li>Power on the Calliope Mini, which will cycle through your colors sequence on its onboard RGB LED. </li>
+    <li>Open the Arduino Serial Monitor on the upper right corner to observe the AS7262 sensor readings. </li>
+    <li>Point the AS7262 sensor at the RGB LED (it has to be stable) and observe the values printed in the Serial Monitor. </li>
+    <li>Note how the spectral data changes with each color of the RGB LED:
+      <ul>
+        <li>It may be easier to observe only one spectral channel at a time: e.g. observe only the 
+          measurements taken by the “V” channel first, and write them down for all the colors at the 
+          table below. When the cycle starts again, observe only the next channel “B” and so on and so 
+          forth.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="w-100"></div>
+<div class="col-lg-9 justify-content-center ct-section">
+  <img src="assets/image/ardiuni-table.png" alt="Ardiuno">
+</div>
+<div class="w-100"></div>
+  <div class="col-lg-3 justify-content-center">
+    <h5>Step 5: Analyze the Results </h5>
+</div>
+<div class="col-lg-6 justify-content-center">
+  <ul>
+    <li>Compare the sensor readings for all the different LED colors. What do you observe? 
+      What happens to the V, B, G, Y, O and R readings from a same color? </li>
+    <li>Discuss which spectral channels (V, B, G, Y, O, R) correspond to which RGB colors.</li>
+    <li>Reflect on how the AS7262 sensor can be used to detect light wavelengths and colors in 
+      various real-world applications. </li>
+  </ul>
+</div>
+</div>
+</div>
+</section>  
+
+    
  <!--End of module 3-->
     
 
