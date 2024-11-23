@@ -228,7 +228,9 @@ footer {
     background-color: lightblue;
     color: white;
   }
-  
+   .m3s1-section {
+    padding: 10px;
+}
 
   @media screen and (max-width: 700px) {
     .sidebar {
