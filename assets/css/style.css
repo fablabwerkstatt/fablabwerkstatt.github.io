@@ -202,14 +202,14 @@ footer {
 }
 
 .sidebar {
-    margin: 0;
+     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 170px;
     background-color: #fff;
     position: fixed;
-    height: 60%;
+    height: auto;
     overflow: auto;
-    box-shadow: 0 1px 15px 0 lightblue;
+    box-shadow: 0 1px 10px 0 lightblue;
   }
   
   .sidebar a {
@@ -219,13 +219,9 @@ footer {
     text-decoration: none;
   }
    
-  .sidebar a.active {
-    background-color: blue;
-    color: white;
-  }
   
-  .sidebar a:hover:not(.active) {
-    background-color: lightblue;
+  .sidebar a:hover {
+    background-color: blue;
     color: white;
   }
    .m3s1-section {
