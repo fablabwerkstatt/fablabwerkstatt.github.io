@@ -228,6 +228,12 @@ footer {
     padding: 10px;
 }
 
+.workshopplanning_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
